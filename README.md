@@ -11,7 +11,7 @@
 ```
 
 | Arguments | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+|--------- |-------- |-------------------------- |
 | `email` | `string` | **Required** admin@gmail.com |
 | `password` | `string` | **Required** admin123 |
 
@@ -23,7 +23,7 @@
 ```
 
 | Arguments | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+|--------- |-------- |-------------------------- |
 | `name` | `string` | **Required** example |
 | `email` | `string` | **Required** example@gmail.com |
 | `password` | `string` | **Required** asdffdsa |
@@ -52,7 +52,7 @@
 ```
 
 | Arguments | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+|--------- |-------- |-------------------------- |
 | `name` | `string` | **Required** Post Malone |
 | `phone` | `integer` | **Required** 095146124 |
 | `email` | `string` | **Nullable** post@gmail.com |
@@ -65,7 +65,7 @@
 ```
   #### You can update with only singe Parameter or more
 | Arguments | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+|--------- |-------- |-------------------------- |
 | `name` | `string` | **Required** Post Malone |
 | `phone` | `integer` | **Required** 095146124 |
 | `email` | `string` | **Nullable** post@gmail.com |
@@ -80,7 +80,7 @@
 ### Change Password (POST)
 
 ```http
-   https://contact-app.mms-it.com/api/v1/change-password
+  https://contact-app.mms-it.com/api/v1/change-password
 ```
 
 | Arguments | Type     | Description                |
@@ -93,9 +93,9 @@
 
 ### Logout (POST)
 
-``http
-    https://contact-app.mms-it.com/api/v1/user-logout
-``
+```http
+  https://contact-app.mms-it.com/api/v1/user-logout
+```
 
 
 
