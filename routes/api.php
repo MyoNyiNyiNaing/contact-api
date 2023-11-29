@@ -33,6 +33,7 @@ Route::prefix("v1")->group(function () {
             Route::get('/user-devices', 'devices');
             Route::post('/change-password', 'changePassword');
             Route::post('/user-logout', 'logout');
+            Route::post('/user-logout-all', 'logoutAll');
         });
     });
     Route::middleware(["auth:sanctum"])->group(function () {
@@ -56,5 +57,5 @@ Route::prefix("v1")->group(function () {
         //    });
     });
 
-    
+
 });

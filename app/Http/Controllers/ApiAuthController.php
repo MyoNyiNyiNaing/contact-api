@@ -14,7 +14,7 @@ use Jenssegers\Agent\Agent;
 
 class ApiAuthController extends Controller
 {
-    public function register(Request $request,PointCreateService $pointCreate): JsonResponse
+    public function register(Request $request, PointCreateService $pointCreate): JsonResponse
     {
         $request->validate([
             "name" => "required|min:2|max:50",
@@ -23,9 +23,9 @@ class ApiAuthController extends Controller
         ]);
 
         $user = User::create([
-           "name" => $request->name,
-           "email" => $request->email,
-           "password" => Hash::make($request->password)
+            "name" => $request->name,
+            "email" => $request->email,
+            "password" => Hash::make($request->password)
         ]);
 
         $point = $pointCreate->create($user->id);
@@ -48,7 +48,7 @@ class ApiAuthController extends Controller
         $agent = new Agent();
 
         $device = $agent->device();
-        if(Auth::attempt($credentials)){
+        if (Auth::attempt($credentials)) {
             $token = Auth::user()->createToken($device);
             return response()->json([
                 "success" => true,
@@ -73,7 +73,16 @@ class ApiAuthController extends Controller
         ]);
     }
 
-    public function profile(): JsonResponse {
+    public function logoutAll(Request $request)
+    {
+
+        $tokenId = $request->user()->currentAccessToken()->id;
+        $request->user()->tokens()->where("id", "!=", $tokenId)->delete();
+        return response()->json(["message" => "logout all successfully.", "success" => true]);
+    }
+
+    public function profile(): JsonResponse
+    {
 
         return response()->json([
             "success" => true,
@@ -82,7 +91,8 @@ class ApiAuthController extends Controller
         ]);
     }
 
-    public function devices(): JsonResponse {
+    public function devices(): JsonResponse
+    {
 
         return response()->json([
             "success" => true,
@@ -91,7 +101,8 @@ class ApiAuthController extends Controller
         ]);
     }
 
-    public function changePassword(Request $request):JsonResponse{
+    public function changePassword(Request $request): JsonResponse
+    {
         $request->validate([
             "current_password" => "required|current_password",
             "password" => "required|min:8|confirmed",
