@@ -1,10 +1,6 @@
+# API Reference (Contact Api)
 
-# Contact Api
-
-
-## API Reference
-
-### Authentication
+## Authentication
 
 #### Login (Post)
 
@@ -45,7 +41,7 @@
 
 
 
-### Contact
+## Contact
 
 #### Get Contacts (Get)
 
@@ -102,7 +98,7 @@
       https://localhost:8000/api/v1/contact/{id}
 
 
-### Trash 
+## Trash 
 
 #### Get Trash (GET)
 
@@ -128,7 +124,7 @@
       https://localhost:8000/api/v1/trash/contact/{id}?delete=restore
 
 
-### Profile
+## Profile
 
 #### Get User Profile (GET)
 
