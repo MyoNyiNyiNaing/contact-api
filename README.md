@@ -138,9 +138,7 @@
 
 #### Change Password (POST)
 
-
- * https://localhost:8000/api/v1/change-password
-
+    * https://localhost:8000/api/v1/change-password
 
 | Arguments | Type     | Description                |
 |---------- |----------|----------------------------|
