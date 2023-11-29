@@ -1,7 +1,5 @@
 
-# Testing API With Auth
-
-Contact App API for students from MMS IT
+# Contact Api
 
 
 ## API Reference
@@ -79,24 +77,6 @@ Contact App API for students from MMS IT
   https://contact-app.mms-it.com/api/v1/contact/{id}
 ```
 
-
-
-
-
-
-### Get Profile (GET)
-
-```http
-  https://contact-app.mms-it.com/api/v1/user-profile
-```
-
-
-### Get User devices (GET)
-
-```http
-  https://contact-app.mms-it.com/api/v1/user-devices
-```
-
 ### Change Password (POST)
 
 ```http
@@ -115,73 +95,5 @@ Contact App API for students from MMS IT
    https://contact-app.mms-it.com/api/v1/user-logout
 ```
 
-# Points & Billing
-
-## Billing
 
 
-### Index(Get)
-``
-Get the List of bills
-``
-```http
-   https://contact-app.mms-it.com/api/v1/billing
-  ```
-
-| Parameters | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `amount_type` | `integer` | **Required,1000,3000,5000** 3000 |
-| `used` | `integer` | **Required** 0 |
-
-### Generate(Post)
-``
-To generate more billing codes
-``
-```http
-   https://contact-app.mms-it.com/api/v1/billing/generate
-  ```
-
-| Arguments | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `amount_type` | `integer` | **Required,1000,3000,5000** 3000 |
-| `count` | `integer` | **Required** **Min** 1  **Max** 30|
-
-### TopUp(Post)
-``
-Topup points with bill codes
-``
-```http
-   https://contact-app.mms-it.com/api/v1/billing/top-up
-  ```
-
-| Arguments | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `code` | `integer` | **Required** 505314 |
-
-
-## Transactions Point
-
-### Transfer (Post)
-``
-Transfer points to user to user
-``
-```http
-   https://contact-app.mms-it.com/api/v1/transaction/transfer
-  ```
-
-| Arguments | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `amount` | `integer` | **Required** 3000 |
-| `email` | `integer` | **Required** admin@gmail.com|
-
-### History (Get)
-``
-Get the history list of transaction
-``
-```http
-   https://contact-app.mms-it.com/api/v1/transaction/history
-  ```
-
-| Parameters | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `type` | `string` | **Required** send Or receive |
