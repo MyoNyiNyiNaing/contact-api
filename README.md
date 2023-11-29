@@ -91,9 +91,9 @@
 
 ### Logout (POST)
 
-```http
+
    https://contact-app.mms-it.com/api/v1/user-logout
-```
+
 
 
 
