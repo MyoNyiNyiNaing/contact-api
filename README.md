@@ -32,13 +32,13 @@
 | `password_confirmation` | `string` | **Required** asdffdsa |
 
 
-### Logout (POST)
+#### Logout (POST)
 
 ```http
   https://localhost:8000/api/v1/user-logout
 ```
 
-### Logout All (POST)
+#### Logout All (POST)
 
 ```http
   https://localhost:8000/api/v1/user-logout-all
@@ -47,27 +47,27 @@
 
 ### Contact
 
-### Get Contacts (Get)
+#### Get Contacts (Get)
 
 ```http
   https://localhost:8000/api/v1/contact
 ```
 
 
-### Search Contacts (Get)
+#### Search Contacts (Get)
 
 ```http
   https://localhost:8000/api/v1/contact?keyword=elonmusk
 ```
 
 
-### Get Single Contact (Get)
+#### Get Single Contact (Get)
 
 ```http
   https://localhost:8000/api/v1/contact/{id}
 ```
 
-### Create Contact(POST)
+#### Create Contact(POST)
 
 ```http
   https://localhost:8000/api/v1/contact
@@ -81,13 +81,13 @@
 | `address` | `string` | **Nullable** NewYork |
 | `photo` | `png,jpeg` | **Nullable** Profile pic |
 
-### Update Contact(PUT)
+#### Update Contact(PUT)
 
 ```http
   https://localhost:8000/api/v1/contact/{id}
 ```
-  #### You can update with only singe Parameter or more 
-  #### Add _method=put to update file with post method
+  #### You can update with only singe Parameter or more (Add _method=put to update file with post method)
+
 | Arguments | Type     | Description                |
 |--------- |-------- |-------------------------- |
 | `name` | `string` | **Required** Elon Musk |
@@ -96,7 +96,7 @@
 | `address` | `string` | **Nullable** NewYork |
 | `photo` | `png,jpeg` | **Nullable** Profile pic |
 
-### Delete Contact (DELETE)
+#### Delete Contact (DELETE)
 
 ```http
   https://localhost:8000/api/v1/contact/{id}
@@ -104,25 +104,25 @@
 
 ### Trash 
 
-### Get Trash (GET)
+#### Get Trash (GET)
 
 ```http
   https://localhost:8000/api/v1/trash/contact
 ```
 
-### Get Single Trash (GET)
+#### Get Single Trash (GET)
 
 ```http
   https://localhost:8000/api/v1/trash/contact/{id}
 ```
 
-### Force Delete Contact (DELETE)
+#### Force Delete Contact (DELETE)
 
 ```http
   https://localhost:8000/api/v1/trash/contact/{id}?delete=force
 ```
 
-### Restore Deleted Contact (DELETE)
+#### Restore Deleted Contact (DELETE)
 
 ```http
   https://localhost:8000/api/v1/trash/contact/{id}?delete=restore
@@ -130,17 +130,17 @@
 
 ### Profile
 
-### Get User Profile (GET)
+#### Get User Profile (GET)
 
 ```http
   https://localhost:8000/api/v1/user-profile
 ```
 
-### Change Password (POST)
+#### Change Password (POST)
 
-``http
-  https://localhost:8000/api/v1/change-password
-``
+
+ * https://localhost:8000/api/v1/change-password
+
 
 | Arguments | Type     | Description                |
 |---------- |----------|----------------------------|
