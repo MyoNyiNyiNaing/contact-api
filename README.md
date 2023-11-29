@@ -8,9 +8,9 @@
 
 #### Login (Post)
 
-```http
-  https://localhost:8000/api/v1/login
-```
+
+      https://localhost:8000/api/v1/login
+
 
 | Arguments | Type     | Description                |
 |--------- |-------- |-------------------------- |
@@ -20,9 +20,9 @@
 
 #### Register (Post)
 
-```http
-  https://localhost:8000/api/v1/register
-```
+
+      https://localhost:8000/api/v1/register
+
 
 | Arguments | Type     | Description                |
 |--------- |-------- |-------------------------- |
@@ -34,44 +34,44 @@
 
 #### Logout (POST)
 
-```http
-  https://localhost:8000/api/v1/user-logout
-```
+
+      https://localhost:8000/api/v1/user-logout
+
 
 #### Logout All (POST)
 
-```http
-  https://localhost:8000/api/v1/user-logout-all
-```
+
+      https://localhost:8000/api/v1/user-logout-all
+
 
 
 ### Contact
 
 #### Get Contacts (Get)
 
-```http
-  https://localhost:8000/api/v1/contact
-```
+
+      https://localhost:8000/api/v1/contact
+
 
 
 #### Search Contacts (Get)
 
-```http
-  https://localhost:8000/api/v1/contact?keyword=elonmusk
-```
+
+      https://localhost:8000/api/v1/contact?keyword=elonmusk
+
 
 
 #### Get Single Contact (Get)
 
-```http
-  https://localhost:8000/api/v1/contact/{id}
-```
+
+      https://localhost:8000/api/v1/contact/{id}
+
 
 #### Create Contact(POST)
 
-```http
-  https://localhost:8000/api/v1/contact
-```
+
+      https://localhost:8000/api/v1/contact
+
 
 | Arguments | Type     | Description                |
 |--------- |-------- |-------------------------- |
@@ -83,9 +83,9 @@
 
 #### Update Contact(PUT)
 
-```http
-  https://localhost:8000/api/v1/contact/{id}
-```
+
+      https://localhost:8000/api/v1/contact/{id}
+
   #### You can update with only singe Parameter or more (Add _method=put to update file with post method)
 
 | Arguments | Type     | Description                |
@@ -98,53 +98,58 @@
 
 #### Delete Contact (DELETE)
 
-```http
-  https://localhost:8000/api/v1/contact/{id}
-```
+
+      https://localhost:8000/api/v1/contact/{id}
+
 
 ### Trash 
 
 #### Get Trash (GET)
 
-```http
-  https://localhost:8000/api/v1/trash/contact
-```
+
+      https://localhost:8000/api/v1/trash/contact
+
 
 #### Get Single Trash (GET)
 
-```http
-  https://localhost:8000/api/v1/trash/contact/{id}
-```
+
+      https://localhost:8000/api/v1/trash/contact/{id}
+
 
 #### Force Delete Contact (DELETE)
 
-```http
-  https://localhost:8000/api/v1/trash/contact/{id}?delete=force
-```
+
+      https://localhost:8000/api/v1/trash/contact/{id}?delete=force
+
 
 #### Restore Deleted Contact (DELETE)
 
-```http
-  https://localhost:8000/api/v1/trash/contact/{id}?delete=restore
-```
+
+      https://localhost:8000/api/v1/trash/contact/{id}?delete=restore
+
 
 ### Profile
 
 #### Get User Profile (GET)
 
-```http
-  https://localhost:8000/api/v1/user-profile
-```
+
+      https://localhost:8000/api/v1/user-profile
+
 
 #### Change Password (POST)
 
-    # https://localhost:8000/api/v1/change-password
+      https://localhost:8000/api/v1/change-password
 
 | Arguments | Type     | Description                |
 |---------- |----------|----------------------------|
 | `current_password` | `string` | **Required** admin123 |
 | `password` | `string` | **Required** asdffdsa |
 | `password_confirmation` | `string` | **Required** asdffdsa |
+
+
+
+
+
 
 
 
