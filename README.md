@@ -84,16 +84,18 @@
 ```
 
 | Arguments | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+|---------- |----------|----------------------------|
 | `current_password` | `string` | **Required** admin123 |
 | `password` | `string` | **Required** asdffdsa |
 | `password_confirmation` | `string` | **Required** asdffdsa |
 
+
+
 ### Logout (POST)
 
-```http
-   > https://contact-app.mms-it.com/api/v1/user-logout
-
+``http
+    https://contact-app.mms-it.com/api/v1/user-logout
+``
 
 
 
