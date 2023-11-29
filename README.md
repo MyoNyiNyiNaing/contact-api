@@ -39,6 +39,8 @@
 
       https://localhost:8000/api/v1/user-logout-all
 
+  #### Logout from all device except current device
+
 
 
 ## Contact
